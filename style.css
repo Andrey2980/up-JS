@@ -30,9 +30,9 @@
 }
 
 .cart-btn:hover {
-	background-color: #526bfa;
-	border-color: #324bd8;
-	color: red;
+	background-color: #ecbef0;
+	border-color: #9b32d8;
+	color: rgb(189, 16, 160);
 	transition: background-color 1s ease;
 }
 

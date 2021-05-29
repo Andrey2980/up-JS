@@ -28,7 +28,7 @@ const renderGoodsList = list => {
 
 }
 
-
+// const quantitu = 0;
 // quantity++;
 //     
 //         function postponedProduct () {
