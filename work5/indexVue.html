@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js</title>
+  <meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css? family=Kaushan+Script|Monserat: 300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+
+</head>
+<body>
+  <main>
+    <div id="app">
+
+      <input tupe="text" v-model="name"/>  <!--связываем name из new Vue через инпут с h1 -->
+      <h1 v-if="name.lenght !==0">Hello, my name is {{name.toUpperCase()}}</h1>
+      <p v-for="nameEntity in listOfName">{{nameEntity}}</p>
+      <p v-for="nameCart in listOfCart">
+        {{nameCart. name}} {{nameCart.price}}</p>
+      <p v-for="nameEntity in listOfName" @click="onClickSayHello">{{nameEntity}}</p>  <!-- v-on:click="onClickSayHello" -->
+      <p> Hi my surname is {{transformToUpperCase}}</p>
+
+    </div>    
+  </main>
+</body>
+
+
+
+
+    <!-- <div id="app">
+      <header>
+
+          <input type="text" class="goods-search"/>
+          <button class="search-button" type="button">Искать</button>
+          <button class="cart-button" type="button">Корзина</button>
+        </header>
+      
+
+      <div class="goods-list">
+          <div class="goods-item" v-for="good in filteredGoods">
+            <h3>{{good.product_name}}</h3>
+            <p>{{good.price}}</p>
+          </div>
+      </div>
+    </div> -->
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="script.js"></script>
+</html>
+
