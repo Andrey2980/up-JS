@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eShop</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css? family=Kaushan+Script|Monserat: 300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		
+	
+</head>
+<body>
+    <main>
+    <header class = header>
+        <input type="text" id="goods-search" class="goods-search"/>
+        <button class="search-button" type="button">Искать</button>
+        <button class="cart-button" type="button">Корзина</button>
+        <button class="cart-input-button" type="button">Кабинет</button>
+        <p class="cart-total-products">Всего:
+            <!-- <span class="total-products-value"></span> -->
+        </p>
+        <p class="cart-total-price">Всего:  
+            <!-- <span id="cart-value" class="cart-value" >0 </span> -->
+        </p>
+
+    </header>
+    <div class="modalwindow">
+        <a class="cart-hide-btn" type="button"><i class="fas fa-times"></i></a>
+        <hr>
+        <p class="modalwindowcart-text">Список покупок:</p>
+        <hr>
+        <div class ="shoping">
+        </div>
+    </div>
+
+    <div class="modalwindowreg">
+        <p class="modalwindowcart-title">Карточка регистрации:</p>
+        <a class="cart-hidereg-btn" type="button"><i class="fas fa-times"></i></a>
+        <div class ="reg-form">
+        </div>
+    </div>
+    
+    <main>
+        <div class ="result-list">
+        </div>
+    </main>
+    
+    <script type="text/javascript" src="script3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- <script type="text/javascript" src="scriptObj.js"></script> -->
+</body>
+</html>

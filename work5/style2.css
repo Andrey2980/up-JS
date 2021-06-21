@@ -1,0 +1,338 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    background-color: #f58183;
+    box-shadow: 0 8px 4px rgb(0 0 0 / 29%)
+}
+
+.cart-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-button {
+    background-color: #05c76c;
+    width: 95px;
+    height: 45px;
+    margin: 0 0 0 -65px;
+    box-shadow: 0.4em 0.4em 2px rgba(4, 71, 8, 0.5); 
+    border-radius: 3px; 
+    cursor: pointer;
+}
+
+.search-button:active {  
+    box-shadow: 0.0em 0.0em 0px rgb(255, 254, 254);
+        
+    }
+
+.goods-search {
+    margin: 0 0 0 20px;
+    border: 2px solid black;
+    
+}
+
+
+.cart-button {
+    background-color: #05c76c;
+    width: 95px;
+    height: 45px;
+    margin: 0 0 0 0;
+    box-shadow: 0.4em 0.4em 2px rgba(4, 71, 8, 0.5); 
+    border-radius: 3px; 
+    cursor: pointer;
+    
+}
+.cart-button:active {  
+    box-shadow: 0.0em 0.0em 0px rgb(255, 254, 254);
+        
+    }
+
+.cart-input-button {
+    background-color: #05c76c;
+    width: 95px;
+    height: 45px;
+    margin: 0 0 0 30;
+    padding: 10px 10px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0.4em 0.4em 2px rgba(4, 71, 8, 0.5); 
+    border-radius: 3px; 
+}
+
+.cart-input-button:active {
+    box-shadow: 0.0em 0.0em 0px rgb(255, 254, 254);
+}
+
+
+/* Карточки товара */
+
+.cart-btn {
+    background-color: #a9b5f8;
+    margin: 0 0 0 0;
+    padding: 10px 10px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0.4em 0.4em 2px rgba(122,122,122,0.5);
+    border-radius: 5px; 
+}
+
+.cart-btn:active {
+    margin: 0 0 0 3px;
+	box-shadow: 0.0em 0.0em 0px rgb(255, 254, 254);
+    
+}
+
+.cart-postponed {
+    margin: 0 0 0 0;
+}
+
+.cart-total-price {
+    margin: 0 40px 0 0;
+
+}
+
+.result-list {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-item {
+    background-size: "cover";
+    background-position: 50%, 50%;
+    border: 2px solid rgb(116, 99, 67);
+    width: 150px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    text-align: center;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+.item-list {
+    height: 100px;
+    width: 135px;
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    margin: 0 0 -55px -15px;
+
+}
+
+/* Модальное окно магазина */
+
+
+.modalwindow {
+    display: none;
+    z-index: 3;
+    width: 800px;
+    height: 478px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 346px 0 0 1px;
+    padding-top: 10px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+} 
+
+.modalwindowcart-text {
+    text-align: center;
+}
+
+.shoping {
+    align-items: left;
+    width: 100%;
+    height: 0px;
+}
+
+.shoping-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart-hide-btn {
+    margin: 0 0 0 777px;
+    background-color: #FFFFFFFF;
+    border-color: #FFFFFFFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #222222;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.pay-button {
+    background-color: #05c76c;
+    width: 70px;
+    height:40px;
+    margin: 0 0 0 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.clear-button {
+    background-color: #c70596;
+    width: 70px;
+    height:40px;
+    margin: 0 30 0 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.cart-title {
+    margin: 30px 0 0 0;
+    width: 100px;
+    height: 100px;
+}
+
+.card-img-top {
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+} 
+.image-title {
+    width: 100px;
+    height: 100px;
+    background: center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+    
+}
+
+.image-title-list {
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px 0px 25px;
+}
+
+.quantity-element {
+    align-items: center;
+    margin: 0 0 0 15px;
+}
+
+/* Модальное окно карточки регистрации */
+
+.modalwindowreg {
+    display: none;
+    z-index: 5;
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0 0 0 225px;
+    padding-top: 10px;
+    position: absolute;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+
+.modalwindowcart-title {
+    width: 50%;
+    margin-left: 113px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+
+.cart-hidereg-btn {
+    margin: 0 0 0 400px;
+    background-color: #FFFFFFFF;
+    border-color: #FFFFFFFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #222222;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.reg-form {
+    margin: 10px;
+    width: 95%;
+    height: 95%;
+}
+.users-form {
+    margin-left: 130px;
+}
+
+.close-reg-btn {
+    background-color: #05c76c;
+    width: 95px;
+    height: 45px;
+    margin: 10px 10px 10px 35px;
+    padding: 10px 10px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0.4em 0.4em 2px rgba(4, 71, 8, 0.5);
+    border-radius: 5px; 
+}
+
+.close-reg-btn:active {
+    
+	box-shadow: 0.0em 0.0em 0px rgb(255, 254, 254);
+    
+}
+
+.form-control-name {
+    margin: 0 0 10px 0;
+}
+
+.form-control-secondname {
+    margin: 0 0 10px 0;
+}
+
+.form-control-mail {
+    margin: 0 0 10px 0;
+}
+
+.form-control-phone {
+    margin: 0 0 10px 0;
+}
+
+.form-control-password-first {
+    margin: 0 0 10px 0;
+}
+.form-control-password-repeat {
+    margin: 0 0 10px 0;
+}
+
+.input-group {
+    margin: 0 0 0 0px;
+}
+
+.ready-to-send { 
+    display: none;
+}
+
+.text-phrase {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.form-control-text {
+    margin: 0 0 0 0;
+}
