@@ -173,23 +173,17 @@ class Basket {
         this.element.style.display = "";
         this.interactionListElem.appendChild(this.element);
 
-        
-        
         let cheskDataControl = document.querySelector(".close-reg-btn") 
         cheskDataControl.onclick = () => this.cheskForm()
-
-        
         const searchButton = document.querySelector(".search-button");
-        searchButton.onclick = () => this.searchNameCart()
+        searchButton.onclick = () => this.FilterGoods()
 
           
     
     }
 
-  searchNameCart() {
-    const searchName = document.getElementById("goods-search").value;
-    
-    
+    FilterGoods() {
+      const searchName = document.getElementById("goods-search").value;
       if (searchName == "Shirt" || searchName == "Socks" || searchName == "Jacket" || searchName == "Boots") {
         console.log("product found")
       } else console.log("Not found")
