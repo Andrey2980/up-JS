@@ -227,7 +227,7 @@
 
 /* Модальное окно карточки регистрации */
 
-.modalwindowreg {
+.modal-container {
     display: none;
     z-index: 5;
     width: 450px;

@@ -218,24 +218,10 @@ class Basket {
     console.log(interaction)
   }
 
-//   sumOfBasket(interaction) {
+//   sumOfBasket() 
         
       
-//      for (let i = 0; i < this.cart.length - 1; i++) {
 
-
-//       for (let j = 0; j < this.parts.length; j++) {   
-//           if (i != j) {
-//               if (this.parts[i].top === this.parts[j].top && this.parts[i].left === this.parts[j].left) {
-//                   game.setGameStatus(GAME_STATUS_STOPPED, console.log("GAME OVER",this.parts[i]));
-//               }
-//           }
-//       }
-//   }
-// }
-
-  //totalProduct()
-   
   
   showBasketList () {  
     modalButtonCart.onclick = () => {

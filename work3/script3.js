@@ -173,8 +173,6 @@ class Basket {
         this.element.style.display = "";
         this.interactionListElem.appendChild(this.element);
 
-        
-        
         let cheskDataControl = document.querySelector(".close-reg-btn") 
         cheskDataControl.onclick = () => this.cheskForm()
 
@@ -182,8 +180,6 @@ class Basket {
         const searchButton = document.querySelector(".search-button");
         searchButton.onclick = () => this.searchNameCart()
 
-          
-    
     }
 
   searchNameCart() {

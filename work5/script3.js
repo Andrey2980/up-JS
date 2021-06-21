@@ -360,8 +360,6 @@ class Interaction {
 // Поиск товара по имени 
 
 
-
-
 // const app = new Vue ({
 //   el: ".goods-search",
 //   data: {
