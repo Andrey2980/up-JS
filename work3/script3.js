@@ -363,24 +363,6 @@ class Interaction {
 
 
 
-
-// const app = new Vue ({
-//   el: ".goods-search",
-//   data: {
-//     name1: "Shirt",
-//     name2: "Socks",
-//     name3: "Jacket",
-//     name4: "Boots",
-//   },
-//   methods: {
-//     onClicksearchCart: (e) => {
-//       console.log(e)
-//       console.log(`Hello ${e.target.innerText}!`)
-//     },
-//   },
-
-// });
-
   /*Получение массива*/
     
   send();

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+  <title>eShop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="style2.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css? family=Kaushan+Script|Monserat: 300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+      <header class="header">
+        <goods-search></goods-search>
+        <button class="search-button" type="button">Искать</button>
+
+        <button class="cart-input-button" type="button" id="show-modal" @click="showModal = true">Регистрация</button>
+        <modal v-if="showModal" @close="showModal = false">
+        </modal>
+
+        <button class="cart-button" type="button" id="show-modal-cart" @click="showModalCart = true" >Корзина</button>
+        <modal-cart v-if="showModalCart" @close="showModalCart = false">
+        </modal-cart>
+
+        <p class="cart-total-products">Всего:
+          <total-products-value></total-products-value>
+        товаров
+        </p>
+        <p class="cart-total-price">Всего:
+          <cart-total-price></cart-total-price>
+        рублей
+        </p>
+      </header>
+      <main>
+        <goods-list :goods="filteredGoods"></goods-list>
+      </main>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<script src="script.js"></script>
+
+</html>

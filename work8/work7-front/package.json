@@ -1,0 +1,18 @@
+{
+  "name": "work7-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../work7-server/script.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
